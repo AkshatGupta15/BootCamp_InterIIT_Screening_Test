@@ -246,3 +246,35 @@ This project is a comprehensive stock price tracking application that uses a mod
       ...
     ]
     ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img width="1470" alt="Screenshot 2024-09-14 at 2 44 33 AM" src="https://github.com/user-attachments/assets/c31b40c7-9fb7-48d0-bae9-1c501a1ce248">
+<img width="1470" alt="Screenshot 2024-09-14 at 2 44 10 AM" src="https://github.com/user-attachments/assets/17ee4a7d-80d4-4af8-b441-bde20fd0466e">
+<img width="1470" alt="Screenshot 2024-09-14 at 2 44 21 AM" src="https://github.com/user-attachments/assets/f5858a62-97ea-49f7-917f-e2964f0fdd94">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
