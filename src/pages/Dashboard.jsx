@@ -9,6 +9,7 @@ import DoughnutCard from '../components/DoughnutCard';
 import CardSmall from '../components/CardSmall';
 
 export default function Dashboard() {
+    const host = 'http://3.110.155.108/api/stocks/latest';
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -16,9 +17,9 @@ export default function Dashboard() {
         setLoading(true);
         try {
             const urls = [
-                'http://localhost:3000/api/stocks/latest/TCS.NS',
-                'http://localhost:3000/api/stocks/latest/RELIANCE.NS',
-                'http://localhost:3000/api/stocks/latest/HDFCBANK.NS'
+                `${host}/TCS.NS`,
+                `${host}/RELIANCE.NS`,
+                `${host}/HDFCBANK.NS`,
             ];
 
             const responses = await Promise.all(urls.map(url => fetch(url)));
