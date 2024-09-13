@@ -1,3 +1,12 @@
+# .....
+My server is running on AWS EC2 and is accessible via http://3.110.155.108/. When the frontend is deployed to platforms like Vercel, it blocks HTTP requests and only allows HTTPS. However, locally, the frontend works fine with HTTP requests when using npm run dev.
+
+Steps to Reproduce Locally are mentioned below
+
+
+
+
+
 # Stock Price Tracking Application
 
 This project is a comprehensive stock price tracking application that uses a modern stack including Vite, React, Express, Prisma, PostgreSQL, Docker, and is hosted on AWS EC2. The application fetches minute-wise stock data, stores it in a PostgreSQL database, and provides APIs for frontend integration.
