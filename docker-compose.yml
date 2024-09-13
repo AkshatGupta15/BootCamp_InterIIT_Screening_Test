@@ -9,14 +9,14 @@ services:
       dockerfile: server.dockerfile
     platform: linux/amd64
     expose:
-      - 4000 
+      - 4000
     environment:
       - PORT=4000
       - DATABASE_URL=postgresql://postgres:123456@postgres:5432/postgres?schema=public
       - JWT_SECRET=iMyPrivateJwtSecret
       - JWT_TOKEN_EXPIRATION=1d
     depends_on:
-      - postgres 
+      - postgres
 
   postgres:
     container_name: db
@@ -30,15 +30,14 @@ services:
     volumes:
       - postgres:/var/lib/postgresql/data
 
-  nginx:
-    container_name: nginx
-    image: nginx:latest
+  frontend:
+    container_name: frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
     ports:
-      - 80:80 # Expose Nginx on port 80 of the host
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf # Mount the custom Nginx config
-    depends_on:
-      - server # Ensure Nginx starts after the server
+      - 3000:80 # Map port 80 inside the container to port 3000 on the host
 
 volumes:
   postgres:
