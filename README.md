@@ -1,5 +1,4 @@
 # .....
-My server is running on AWS EC2 and is accessible via http://3.110.155.108/. When the frontend is deployed to platforms like Vercel, it blocks HTTP requests and only allows HTTPS. However, locally, the frontend works fine with HTTP requests when using npm run dev.
 
 Steps to Reproduce Locally are mentioned below
 
