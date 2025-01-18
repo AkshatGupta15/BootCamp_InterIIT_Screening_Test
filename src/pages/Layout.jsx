@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 const Layout = ({ children }) => {
     return (
         <div>
-            <div className='flex'>
+            <div className='flex h-screen'>
             <div className='w-[200px] bg-white min-h-screen'><Sidebar /></div>
             <div className='w-full bg-bg_light'>
                 <Navbar />

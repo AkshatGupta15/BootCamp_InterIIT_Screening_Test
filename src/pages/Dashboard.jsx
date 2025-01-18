@@ -47,7 +47,7 @@ export default function Dashboard() {
 
     return (
         <>
-            <div className=''>
+            <div className='h-screen'>
                 <div className="grid grid-cols-3 grid-rows-10 gap-4 p-5">
                     <div className="col-span-3 row-span-3">
                         <BannerDashBoard/>
